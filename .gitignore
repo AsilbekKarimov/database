@@ -1,0 +1,8 @@
+
+# Ignore Node.js modules (if using npm)
+node_modules/
+
+# Ignore any other build files or directories
+/build/
+/dist/
+/out/   
