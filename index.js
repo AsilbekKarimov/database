@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 
 // Use cors middleware with specific origin
 app.use(cors({
-  origin: 'http://127.0.0.1:5501'
+  origin: 'http://127.0.0.1:5501/index.html'
 }));
 
 // Serve JSON server
