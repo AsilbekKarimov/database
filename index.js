@@ -9,8 +9,10 @@ const middlewares = jsonServer.defaults();
 
 const PORT = process.env.PORT || 3001;
 
-// Use cors middleware
-app.use(cors());
+// Use cors middleware with specific origin
+app.use(cors({
+  origin: 'http://127.0.0.1:5501'
+}));
 
 // Serve JSON server
 app.use('/api', middlewares, router);
